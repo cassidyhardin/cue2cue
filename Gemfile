@@ -6,7 +6,17 @@ ruby '2.6.3'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.4'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3', '~> 1.4'
+# gem 'sqlite3', '~> 1.4'
+
+# make sure references to sqlite3 gem ONLY appear in dev/test groups
+group :development, :test do
+  gem 'sqlite3'
+end 
+
+# make sure the following gems are in your production group:
+group :production do
+  gem 'pg'              # use PostgreSQL in production (Heroku)
+end
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
 # Use SCSS for stylesheets
