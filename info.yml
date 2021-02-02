@@ -1,0 +1,20 @@
+project:
+  name: "q2q"
+  owner: "cassidy"
+  teamId: "0"
+  identities:
+    pivotal:
+      url: "https://www.pivotaltracker.com/n/projects/2487298"
+    heroku:
+      url: "https://dashboard.heroku.com/apps/sleepy-fortress-10590"
+    travis:
+      url: "https://travis-ci.com/github/cassidyhardin/cue2cue"
+    codecov:
+      url: "https://app.codecov.io/gh/cassidyhardin/cue2cue/"
+  members:
+    member1:
+      name: "cassidy"
+      surname: "hardin"
+      githubUsername: "cassidyhardin"
+      pivotalUsername: "cassidyhardin"
+      herokuEmail: "cassidyhardin@berkeley.edu"
