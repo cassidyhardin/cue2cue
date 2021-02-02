@@ -13,6 +13,16 @@ group :development, :test do
   gem 'sqlite3'
 end 
 
+# setup Cucumber, RSpec, Guard support
+group :test do
+  gem 'rspec-rails'
+  gem 'guard-rspec'
+  gem 'simplecov', :require => false
+  gem 'cucumber-rails', :require => false
+  gem 'cucumber-rails-training-wheels' # basic imperative step defs like "Then I should see..."
+  gem 'database_cleaner' # required by Cucumber
+end
+
 # make sure the following gems are in your production group:
 group :production do
   gem 'pg'              # use PostgreSQL in production (Heroku)
